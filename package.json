@@ -26,7 +26,8 @@
     "copy-readme-to-packages": "node scripts/copy-readme-to-packages.ts",
     "version": "changeset version && pnpm install --lockfile-only",
     "prepare-release": "pnpm copy-readme-to-packages && pnpm build",
-    "release": "pnpm prepare-release && changeset publish"
+    "release": "pnpm prepare-release && changeset publish",
+    "prepare": "pnpm build"
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",
